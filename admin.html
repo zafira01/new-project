@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin DesaCare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>Admin Panel</h2>
+
+<a class="menu active" onclick="showPage('dashboard')">📊 Dashboard</a>
+<a class="menu" onclick="showPage('laporan')">🧾 Laporan Masuk</a>
+<a class="menu" onclick="showPage('dana')">💰 Dana Desa</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<!-- DASHBOARD -->
+<section id="dashboard">
+<h2>Dashboard Admin</h2>
+
+<div class="grid">
+<div class="card">
+<h3 id="totalLaporan">0</h3>
+<p>Total Laporan</p>
+</div>
+
+<div class="card">
+<h3 id="pendingCount">0</h3>
+<p>Pending</p>
+</div>
+
+<div class="card">
+<h3 id="prosesCount">0</h3>
+<p>Diproses</p>
+</div>
+
+<div class="card">
+<h3 id="selesaiCount">0</h3>
+<p>Selesai</p>
+</div>
+
+<div class="card">
+<h3 id="totalDana">0</h3>
+<p>Total Dana</p>
+</div>
+</div>
+
+</section>
+
+<!-- LAPORAN -->
+<section id="laporan" class="hidden">
+<h2>Laporan Masuk</h2>
+<div id="listLaporan" class="grid"></div>
+</section>
+
+<!-- DANA -->
+<section id="dana" class="hidden">
+<h2>Data Dana Desa</h2>
+<div id="listDana" class="grid"></div>
+</section>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html> 
