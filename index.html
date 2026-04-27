@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DesaCare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>DesaCare</h2>
+
+<a class="menu" onclick="showPage('home', event)">🏠 Home</a>
+<a class="menu" onclick="showPage('dashboard', event)">📊 Dashboard</a>
+<a class="menu" onclick="showPage('lapor', event)">🧾 Lapor</a>
+<a class="menu" onclick="showPage('data', event)">📍 Laporan</a>
+<a class="menu" onclick="showPage('dana', event)">💰 Dana</a>
+<a class="menu" onclick="showPage('login', event)">🔐 Login</a>
+<a class="menu" onclick="showPage('help', event)">❓ Panduan</a>
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<!-- HOME -->
+<section id="home">
+
+<div class="hero">
+<h1 class="fade-in">DesaCare</h1>
+<p class="fade-in delay">
+Platform digital pelaporan masalah desa & transparansi dana secara real-time.
+</p>
+
+<button class="btn-primary glow fade-in delay2" onclick="showPage('lapor')">
+Mulai Lapor Sekarang
+</button>
+</div>
+
+<div class="grid">
+
+<div class="glass-card fade-in glow reveal">
+<h3>📍 Laporan Cepat</h3>
+<p>Kirim laporan masalah desa hanya dalam beberapa langkah.</p>
+</div>
+
+<div class="glass-card fade-in delay glow reveal">
+<h3>📸 Bukti Foto</h3>
+<p>Upload foto agar laporan lebih jelas dan valid.</p>
+</div>
+
+<div class="glass-card fade-in delay2 glow reveal">
+<h3>📊 Status Real-Time</h3>
+<p>Pantau perkembangan laporan dari Pending hingga Selesai.</p>
+</div>
+
+<div class="glass-card fade-in delay3 glow reveal">
+<h3>💰 Transparansi Dana</h3>
+<p>Lihat penggunaan dana desa secara terbuka.</p>
+</div>
+
+</div>
+
+<div class="cta">
+<h2>Siap bantu desa kamu jadi lebih baik?</h2>
+<p>Mulai laporkan masalah sekarang dan ikut perubahan.</p>
+</div>
+
+</section>
+<section id="help" class="hidden">
+
+<h2>❓ Panduan Penggunaan DesaCare</h2>
+
+<div class="card">
+
+<h3>📌 Apa itu DesaCare?</h3>
+<p>
+DesaCare adalah sistem digital untuk melaporkan masalah desa dan melihat transparansi dana desa secara online.
+Aplikasi ini dibuat agar masyarakat bisa ikut berpartisipasi dalam pembangunan desa.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧭 Navigasi (Sidebar)</h3>
+<p>
+Sidebar adalah menu utama di sebelah kiri layar. Dari sini kamu bisa pindah halaman tanpa reload.
+</p>
+
+<h4>Cara pakai:</h4>
+<ol>
+<li>Klik menu di sidebar (Home, Lapor, Dashboard, dll)</li>
+<li>Halaman akan langsung berubah</li>
+<li>Menu aktif akan berwarna berbeda</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h3>🧾 Cara Melapor Masalah</h3>
+<ol>
+<li>Pilih menu "Lapor"</li>
+<li>Isi nama, jenis masalah, alamat, dan deskripsi</li>
+<li>Upload foto sebagai bukti</li>
+<li>Klik tombol kirim</li>
+<li>Laporan akan masuk ke sistem dengan status Pending</li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Dashboard</h3>
+<p>
+Dashboard adalah halaman ringkasan data.
+Di sini kamu bisa melihat jumlah laporan dan statusnya secara cepat.
+</p>
+
+<h4>Cara pakai:</h4>
+<ul>
+<li>Buka menu Dashboard</li>
+<li>Lihat jumlah laporan masuk</li>
+<li>Lihat status (Pending, Diproses, Selesai)</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>📍 Status Laporan</h3>
+<ul>
+<li>🟡 Pending → laporan baru masuk</li>
+<li>🔵 Diproses → sedang dikerjakan admin</li>
+<li>🟢 Selesai → sudah selesai ditangani</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>💰 Transparansi Dana</h3>
+<p>
+Halaman ini menampilkan informasi penggunaan dana desa agar masyarakat bisa melihat secara terbuka.
+</p>
+
+<h4>Cara pakai:</h4>
+<ul>
+<li>Buka menu Dana</li>
+<li>Lihat daftar transaksi</li>
+<li>Cek jumlah dan bukti dana</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🔔 Notifikasi (Toast)</h3>
+<p>
+Notifikasi kecil yang muncul di pojok layar untuk memberi informasi seperti:
+"Laporan terkirim" atau "Status diperbarui".
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔐 Login Admin</h3>
+<p>
+Digunakan untuk masuk ke halaman admin agar bisa mengelola laporan dan data desa.
+</p>
+
+<h4>Cara pakai:</h4>
+<ol>
+<li>Buka menu Login</li>
+<li>Masukkan username & password</li>
+<li>Klik login</li>
+<li>Jika benar, masuk ke dashboard admin</li>
+</ol>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="hidden">
+<h2>Dashboard</h2>
+
+<div class="grid">
+<div class="card">
+<h3 id="totalLaporan">0</h3>
+<p>Total Laporan</p>
+</div>
+
+<div class="card">
+<h3 id="pendingCount">0</h3>
+<p>Pending</p>
+</div>
+
+<div class="card">
+<h3 id="prosesCount">0</h3>
+<p>Diproses</p>
+</div>
+
+<div class="card">
+<h3 id="selesaiCount">0</h3>
+<p>Selesai</p>
+</div>
+
+<div class="card">
+<h3 id="totalDana">0</h3>
+<p>Total Dana</p>
+</div>
+</div>
+
+</section>
+
+<!-- LAPOR -->
+<section id="lapor" class="hidden">
+<h2>Lapor Masalah</h2>
+
+<div class="form">
+<input type="text" id="nama" placeholder="Nama">
+<select id="jenis">
+<option>Jalan Rusak</option>
+<option>Sampah</option>
+<option>Lampu Mati</option>
+</select>
+
+<input type="text" id="alamat" placeholder="Alamat">
+<textarea id="deskripsi" placeholder="Deskripsi"></textarea>
+<input type="file" id="foto">
+
+<button onclick="kirimLaporan()">Kirim</button>
+</div>
+
+</section>
+
+<!-- LAPORAN -->
+<section id="data" class="hidden">
+<h2>Data Laporan</h2>
+<div id="listLaporan" class="grid"></div>
+</section>
+
+<!-- DANA -->
+<section id="dana" class="hidden">
+<h2>Transparansi Dana</h2>
+
+<div class="form">
+<input type="text" id="judulDana" placeholder="Judul">
+<input type="number" id="jumlahDana" placeholder="Jumlah">
+<input type="file" id="buktiDana">
+<button onclick="tambahDana()">Tambah</button>
+</div>
+
+<div id="listDana" class="grid"></div>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="hidden">
+<div class="login">
+<h2>Login Admin</h2>
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+</div>
+</section>
+
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>  
